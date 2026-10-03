@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BilldDesk 安卓安装包（APK）信息核对与安装步骤</title>
-<meta name="description" content="这份 BilldDesk 安卓安装包为 0.58.0 版本、约 49.82 MB，安装前先核对包名与 MD5，再按步骤允许未知来源并开启被控权限；网页端无需安装也能发起远程，两端保持同版本连接更稳。">
+<title>BilldDesk 安卓下载与安装：从网盘转存到开启被控</title>
+<meta name="description" content="BilldDesk 安卓版下载与安装指引：先给夸克网盘的转存与下载入口，再走四步装到手机上——转存下载、点开安装包、允许未知来源、完成并打开；需要被别人远程操作时，再按提示开启无障碍权限，附装不上时的处理办法。">
 <link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,39 +32,56 @@
 <main>
   <div class="page-head">
     <div class="wrap">
-      <h1>安卓安装包信息核对与安装步骤</h1>
-      <p>这一页收录当前这份 BilldDesk 安卓安装包（APK）的完整信息：版本、体积、包名与 MD5，装之前逐项核对一遍，再按步骤走完首次安装与被控权限设置。</p>
+      <h1>BilldDesk 安卓下载与安装</h1>
+      <p>这一页把安装包怎么拿、手机上怎么装讲清楚：先从夸克网盘分享转存并下载，再走四步装到手机上；需要被别人远程操作时，再按提示开启对应的系统权限。</p>
     </div>
   </div>
 
   <div class="wrap dl-layout">
     <div class="dl-main">
+      <!-- 首屏：下载入口 -->
       <div class="dl-block">
-        <h2>安装包信息</h2>
-        <table class="spec">
-          <tr><th>版本号</th><td>0.58.0</td></tr>
-          <tr><th>体积</th><td>约 49.82 MB</td></tr>
-          <tr><th>包名</th><td>com.example.billd_desk_flutter_pro</td></tr>
-          <tr><th>MD5</th><td>BC3467E29CAC2BABC1B13EE7EFD98D19</td></tr>
-          <tr><th>实测系统范围</th><td>Android 11 ～ Android 15</td></tr>
-        </table>
-        <div class="tip-box"><b>两点提醒：</b>项目迭代很快，远端可能已有更新的版本号；另外项目尚未发布稳定版，版本之间可能存在不兼容改动，<b>控制端与被控端保持同版本</b>是最省心的做法。</div>
+        <h2>下载安装包</h2>
+        <p>安装包经夸克网盘分享获取：先转存到自己的网盘账号，再下载到手机，转存后资源就固定在你这儿、随时能下。</p>
+        <p><button class="btn btn-primary" data-link="download">获取安装文件资源</button></p>
+        <div class="tip-box"><b>两点提醒：</b>项目迭代较快，网盘里的版本以转存时的文件为准；项目尚未发布稳定版，版本之间可能有改动，<b>控制端与被控端保持同版本</b>连接更省心。</div>
       </div>
 
+      <!-- 安装步骤 -->
       <div class="dl-block">
         <h2>安装步骤</h2>
         <ol class="steps">
-          <li><b>把安装包传到手机</b><p>从下方入口转存到自己的网盘后在手机端下载，也可以电脑下载后用数据线拷贝过去。</p></li>
-          <li><b>允许安装未知来源应用</b><p>在文件管理器里点开 APK，首次安装会触发"未知来源应用"提示：有的品牌在安装弹窗里直接授权，有的要先到"设置 → 安全"里打开开关。</p></li>
+          <li><b>转存并下载</b><p>点上方入口打开夸克网盘分享页，转存后在手机端下载；也可以电脑下载后用数据线拷贝到手机。</p></li>
+          <li><b>点开安装包，允许未知来源</b><p>在文件管理器里点开 APK，首次安装会触发「未知来源应用」提示：有的品牌在安装弹窗里直接授权，有的要先到「设置 → 安全」里打开开关。</p></li>
           <li><b>完成安装并打开</b><p>装好打开 App，首页即可看到本机的设备码与连接密码，两项都支持自定义修改。</p></li>
-          <li><b>按用途给权限</b><p>只让别人"看屏幕"给投屏权限就够；要对方能真实操作手机，需再到系统辅助功能里开启无障碍服务，并记得用完收权。</p></li>
+          <li><b>按用途给权限</b><p>只让别人「看屏幕」给投屏权限就够；要对方能真实操作手机，需再到系统辅助功能里开启无障碍服务，用完记得收权。</p></li>
         </ol>
       </div>
 
+      <!-- 下载入口复现 -->
+      <div class="cta-band">
+        <h2>还没拿到安装包？</h2>
+        <p>夸克网盘分享 · 转存后即可下载安装</p>
+        <button class="btn btn-primary" data-link="download">获取安装文件资源</button>
+      </div>
+
+      <!-- 常见安装问题 -->
       <div class="dl-block">
-        <h2>装好之后连什么</h2>
-        <p>被控电脑端有 Windows 与 macOS 客户端，从项目发布的各端安装包中取对应平台的一份即可；不想装任何东西时，浏览器打开网页端也能发起远程控制。安卓 13 及以上系统开无障碍如果被"受限设置"拦住，先在应用信息里允许受限设置再回辅助功能开启。</p>
-        <p>连接卡在"输入密码后无响应"、画面白屏或帧率上不去，多半是两端版本差异或画质参数超出了带宽，先让两端版本对齐，再逐档调低码率与分辨率。</p>
+        <h2>常见安装问题</h2>
+        <div class="faq">
+          <details>
+            <summary>点了安装包没反应，或提示被阻止</summary>
+            <p>通常是没给「安装未知应用」权限。按安装步骤第 2 步，在「设置 → 安全」里给下载用的那个应用授权一次，再回到安装包重试。安卓 13 及以上开无障碍若被「受限设置」拦住，先在应用信息里允许受限设置再回辅助功能开启。</p>
+          </details>
+          <details>
+            <summary>提示「应用未安装」</summary>
+            <p>手机里已有签名不同的同名旧版时会这样，先卸载旧的再装；也可能是存储空间不足，清理后重试。</p>
+          </details>
+          <details>
+            <summary>装好后连不上、输入密码无响应</summary>
+            <p>多半是两端版本不一致：先让控制端与被控端版本对齐，再逐档调低码率与分辨率。想省事就用浏览器打开网页端发起远程，无需在本机装任何东西。</p>
+          </details>
+        </div>
       </div>
     </div>
 
@@ -72,14 +89,14 @@
       <div class="panel">
         <img src="assets/img/logo.jpg" alt="BilldDesk 图标">
         <h3>BilldDesk 安卓版</h3>
-        <p>0.58.0 · 约 49.82 MB · APK</p>
+        <p>夸克网盘分享 · 转存后下载安装</p>
         <button class="btn btn-primary" data-link="download">获取安装文件资源</button>
-        <div class="mono-line">转存后下载 · MD5 可校验</div>
+        <div class="mono-line">手机端即可完成下载与安装</div>
       </div>
       <div class="panel" style="text-align:left;">
-        <h3 style="margin-bottom:10px;">快速核对</h3>
-        <p style="margin-bottom:8px;">· 包名以 <span style="font-family:var(--mono);color:var(--green);">billd_desk_flutter</span> 开头</p>
-        <p style="margin-bottom:8px;">· 安卓 13 开无障碍需先"允许受限设置"</p>
+        <h3 style="margin-bottom:10px;">安装小抄</h3>
+        <p style="margin-bottom:8px;">· 无需电脑，手机端即可完成下载与安装</p>
+        <p style="margin-bottom:8px;">· 控制端与被控端版本对齐，连接更稳</p>
         <p>· 被控后建议把 App 加入电池白名单，避免锁屏断连</p>
       </div>
     </aside>
