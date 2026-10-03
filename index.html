@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BilldDesk：开源跨平台远程桌面，手机电脑互控不限时</title>
+<meta name="description" content="BilldDesk 基于 WebRTC 与 Flutter 打造，Windows、macOS、安卓与网页端互通，免费使用且不设连接时长与画质上限，支持隐私屏、虚拟屏、屏幕墙、文件传输与自建服务器。这里整理了它的功能清单、真实界面与安卓安装包信息。">
+<link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.jpg" alt="BilldDesk 图标">
+      BilldDesk<small>介绍站</small>
+    </a>
+    <button class="nav-toggle" aria-label="展开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="#shots">真实界面</a>
+      <a href="#features">功能清单</a>
+      <a href="#matrix">跨端矩阵</a>
+      <a href="#faq">常见问题</a>
+      <a href="download.html" class="btn btn-primary btn-sm">获取安装包</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="kicker"><i></i>开源项目 · GitHub 4000+ Star</span>
+        <h1>把远程桌面装进口袋，<br>手机电脑<em>互控不设限</em></h1>
+        <p class="lead">BilldDesk 是一个用 WebRTC + Flutter + Vue3 + Node.js 搭起来的开源远程桌面工具：电脑控电脑、手机控电脑、手机控手机、电脑控手机，四种组合都走得通，连接时长与画质不设上限。</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" data-link="download">获取安装文件资源</button>
+          <a class="btn btn-ghost" href="#features">先看功能</a>
+        </div>
+        <div class="hero-meta">
+          <div class="m"><b>4 端</b><span>Windows / macOS / 安卓 / 网页</span></div>
+          <div class="m"><b>0 限制</b><span>免费，无时长与画质门槛</span></div>
+          <div class="m"><b>H265·AV1</b><span>主流编解码全支持</span></div>
+        </div>
+      </div>
+      <div class="connect-card" aria-hidden="true">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="row"><span>设备码</span><b>561 518 651</b></div>
+        <div class="row"><span>连接密码</span><b>********</b></div>
+        <div class="log">
+          <div>&gt; 信令握手 <em>……</em></div>
+          <div>&gt; P2P 打洞成功，直连建立</div>
+          <div class="ok">&gt; 已连接 · 1080P / 60fps</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 真实界面 -->
+  <section class="shots" id="shots">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>先看真实界面</h2>
+        <p>安卓端三个核心页面，加上电脑端与网页端的实拍，装之前心里有数。</p>
+      </div>
+      <div class="shot-row">
+        <figure class="phone">
+          <img src="assets/img/app-controlled.png" alt="BilldDesk 安卓被控页" loading="lazy">
+          <figcaption>被控页：设备码、连接密码与远控权限都在这一屏</figcaption>
+        </figure>
+        <figure class="phone">
+          <img src="assets/img/app-master.png" alt="BilldDesk 安卓主控页" loading="lazy">
+          <figcaption>主控页：输入对方设备码即可发起远程</figcaption>
+        </figure>
+        <figure class="phone">
+          <img src="assets/img/app-settings.png" alt="BilldDesk 安卓设置页" loading="lazy">
+          <figcaption>设置页：开机自启、自定义中继服务器等选项</figcaption>
+        </figure>
+      </div>
+      <div class="shot-wide">
+        <figure>
+          <img src="assets/img/desktop-controlled.webp" alt="BilldDesk 电脑端主控 Windows 桌面" loading="lazy">
+          <figcaption>电脑端发起远程，直接接管另一台 Windows 桌面，文件、窗口照常操作</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/web-console.jpg" alt="BilldDesk 网页端控制台" loading="lazy">
+          <figcaption>网页端控制台：码率、帧率、分辨率（最高 8K 档位）都能手动调</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 功能 -->
+  <section id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>功能清单：把商用远控的付费项做成了免费</h2>
+        <p>和常见商业远控的免费版对比，下面这些在 BilldDesk 里都不设门槛。</p>
+      </div>
+      <div class="grid">
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <h3>跨端互控</h3>
+          <p>电脑控电脑、手机控电脑、电脑控手机、手机控手机，网页端浏览器打开也能发起。</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 19h16"/></svg></div>
+          <h3>文件传输</h3>
+          <p>主控与被控之间互传文件，跨设备取资料不用再绕网盘中转。</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9h4M10 12h6"/></svg></div>
+          <h3>隐私屏 / 虚拟屏</h3>
+          <p>被控端黑屏但远控照常；还能创建多个虚拟屏，多屏任务互不干扰。</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+          <h3>屏幕墙与群控</h3>
+          <p>一屏同时查看多台设备，支持单控与批量操作，管机房、管工作室省事。</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+          <h3>自定义设备码</h3>
+          <p>设备码与连接密码都能改，好记的号码自己设，连接凭据不依赖账号。</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg></div>
+          <h3>画质可调</h3>
+          <p>码率 1k–6M、帧率 1–120 帧、分辨率 360P–8K 逐档可调，弱网也能顺滑。</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 17v2M18 17v2M7 12h2M15 12h2"/></svg></div>
+          <h3>硬件编解码</h3>
+          <p>NVIDIA、AMD 显卡 GPU 编解码加速，H265 / H264 / AV1 / VP8 / VP9 都支持。</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></div>
+          <h3>自建服务器</h3>
+          <p>API、WebSocket、中继地址都能指向自己的服务器，信令与流量全在自己手里。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 跨端矩阵 -->
+  <section class="ver" id="matrix" style="background:var(--bg-soft);">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>四种连接组合，一套凭据走通</h2>
+        <p>被控端打开 App 就能看到设备码与连接密码，控制端填进去就能连。</p>
+      </div>
+      <div class="matrix">
+        <div class="pair">
+          <div class="dev"><div class="box"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="11" rx="1.5"/><path d="M2 18h20"/></svg></div>电脑</div>
+          <div class="link-line"></div>
+          <div class="dev"><div class="box"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="11" rx="1.5"/><path d="M2 18h20"/></svg></div><b>电脑控电脑</b></div>
+        </div>
+        <div class="pair">
+          <div class="dev"><div class="box"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>手机</div>
+          <div class="link-line"></div>
+          <div class="dev"><div class="box"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="11" rx="1.5"/><path d="M2 18h20"/></svg></div><b>手机控电脑</b></div>
+        </div>
+        <div class="pair">
+          <div class="dev"><div class="box"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>手机</div>
+          <div class="link-line"></div>
+          <div class="dev"><div class="box"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><b>手机控手机</b></div>
+        </div>
+        <div class="pair">
+          <div class="dev"><div class="box"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="11" rx="1.5"/><path d="M2 18h20"/></svg></div>电脑</div>
+          <div class="link-line"></div>
+          <div class="dev"><div class="box"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><b>电脑控手机</b></div>
+        </div>
+      </div>
+      <p class="ver-note">手机控手机还可以<em>免装客户端</em>：被控方保持在线，控制方用手机浏览器打开网页端发起，走的就是网页端能力。</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>常见问题</h2>
+        <p>装机之前被问得最多的几件事。</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>BilldDesk 收费吗？有连接时长限制吗？</summary>
+          <div class="a">基础功能免费，连接时长、画质、并发这些常见商业远控拿来当付费墙的项目，在 BilldDesk 这里都不设门槛。项目另有 Pro 版本线，对普通用户同样免费，主要面向开发者提供源码订阅。</div>
+        </details>
+        <details>
+          <summary>安卓 13 上无障碍开关点不动怎么办？</summary>
+          <div class="a">这是系统对侧装应用的"受限设置"拦截，不是软件坏了：长按桌面图标进应用信息，点右上角菜单里的"允许受限设置"，再回辅助功能列表打开服务开关即可。</div>
+        </details>
+        <details>
+          <summary>画面卡顿或者白屏怎么调？</summary>
+          <div class="a">先分清是连接问题还是画质问题。白屏多与编解码器兼容有关，在高级设置里逐个关 H265、AV1、VP9 试验；卡顿则先测两端带宽，码率别设得高于实测网速，弱网时换一个近一点的中继服务器。</div>
+        </details>
+        <details>
+          <summary>数据安全吗？流量走谁的服务器？</summary>
+          <div class="a">默认走项目方在线服务；介意流量过第三方的话，它是开源项目，服务端可以自己部署，客户端里把 API、WebSocket 与中继地址改成自己的服务器即可。连接凭据靠设备码 + 密码鉴权，密码建议改成自己的并定期更换。</div>
+        </details>
+        <details>
+          <summary>项目还在活跃更新吗？</summary>
+          <div class="a">项目 2024 年 2 月在 GitHub 提交首版，由作者一人持续开发，Star 数已过 4000。要注意它尚未发布稳定版，版本之间可能有破坏性改动，控制端与被控端建议保持同版本。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>装一份，把家里和公司的电脑都连起来</h2>
+        <p>安卓安装包约 50 MB，装完几分钟就能发起第一次远程。</p>
+        <button class="btn btn-primary" data-link="download">获取安装文件资源</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span>本站为第三方介绍页，展示素材来自公开资料，版权归原作者所有。</span>
+    <span>BilldDesk · 跨平台远程桌面</span>
+  </div>
+</footer>
+
+<div class="float-btns">
+  <button class="js-to-top" aria-label="返回顶部">↑</button>
+  <button class="dl" data-link="download" aria-label="获取安装文件资源">⇩</button>
+</div>
+
+<script src="assets/js/links.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
